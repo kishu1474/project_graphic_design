@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title> HomeWork - 3  (Graphics_Design)</title>
+    <style>
+        div.a {
+          position: absolute;
+          left: auto;
+          width: 250px;
+          height: 500px;
+          border: 3px solid blue;
+        } 
+        
+        div.b {
+          position: absolute;
+          left: 400px;
+          width: 480px;
+          height: 500px;
+          border: 3px solid green;
+        } 
+    </style>
+</head>
+
+<script type="text/javascript" src="webgl-utils.js"></script>
+<script type="text/javascript" src="initShaders.js"></script>
+<script type="text/javascript" src="MV.js"></script>
+
+<script type="text/javascript" src="Rotating_Tetrahedron.js"></script>
+
+<body onload="main()">
+
+    <div class="a">
+        <nav>
+          <ul>
+            <li><p>Rotate aroung X-axis</p>
+                <button id="x_button">X-axis</button></li>
+                <br>
+                <br>
+            <li><p>Rotate aroung Y-axis</p>
+                <button id="y_button">Y-axis</button></li>
+                <br>
+                <br>
+            <li><p>Rotate aroung Z-axis</p>
+                <button id="z_button">Z-axis</button></li>
+          </ul>
+        </nav>
+    </div>
+    <div class="b">
+        <article>
+            <h1>
+                <canvas id="canvas"  width="500"" height=" 500"> </canvas>
+            </h1>          
+        </article>
+    </div>
+
+</body>
+
+</html>
